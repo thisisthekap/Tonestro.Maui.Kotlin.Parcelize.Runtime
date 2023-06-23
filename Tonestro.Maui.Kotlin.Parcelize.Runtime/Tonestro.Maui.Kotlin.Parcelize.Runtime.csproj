@@ -7,7 +7,7 @@
   </PropertyGroup>
   <PropertyGroup>
     <IsPackable>true</IsPackable>
-    <PackageId>Tonestro.Maui.Kotlin.Parcelize.Runtine</PackageId>
+    <PackageId>Tonestro.Maui.Kotlin.Parcelize.Runtime</PackageId>
     <Version>1.6.21.1</Version>
     <Description>Contains bindings for kotlin.parcelize.runtime</Description>
     <Authors>Christian Kapplmüller, Albilaga</Authors>
