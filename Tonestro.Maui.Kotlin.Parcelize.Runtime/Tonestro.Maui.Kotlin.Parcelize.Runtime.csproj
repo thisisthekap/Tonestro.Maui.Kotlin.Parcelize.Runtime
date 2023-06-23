@@ -5,4 +5,8 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Kotlin.Android.Extensions.Runtime" Version="1.6.21" />
+    <PackageReference Include="Xamarin.Kotlin.StdLib" Version="1.6.21.1" />
+  </ItemGroup>
 </Project>
