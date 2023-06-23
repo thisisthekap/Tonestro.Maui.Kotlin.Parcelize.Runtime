@@ -1,9 +1,19 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net7.0-android</TargetFramework>
-    <SupportedOSPlatformVersion>21</SupportedOSPlatformVersion>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
+    <SupportedOSPlatformVersion>31</SupportedOSPlatformVersion>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+  </PropertyGroup>
+  <PropertyGroup>
+    <IsPackable>true</IsPackable>
+    <PackageId>Tonestro.Maui.Kotlin.Parcelize.Runtine</PackageId>
+    <Version>1.6.21.1</Version>
+    <Description>Contains bindings for kotlin.parcelize.runtime</Description>
+    <Authors>Christian Kapplmüller, Albilaga</Authors>
+    <Company>fun.music IT GmbH</Company>
+    <PackageOutputPath>nugetoutput</PackageOutputPath>
+    <PackageLicensePath>..\LICENSE</PackageLicensePath>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Xamarin.Kotlin.Android.Extensions.Runtime" Version="1.6.21" />
