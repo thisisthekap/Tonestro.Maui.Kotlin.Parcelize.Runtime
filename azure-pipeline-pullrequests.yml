@@ -24,6 +24,6 @@ steps:
   displayName: Restore Solution
 
 - bash: |
-    cd Tonestro.Maui.Kotlin.Parcelize.Runtime
+    cd Tonestro.Maui.Kotlin.Parcelize.Runtime.UsageChecker
     dotnet publish -f net7.0-android -c Release -p:AndroidPackageFormats=apk -p:AndroidKeyStore=true -p:AndroidSigningKeyStore=usagechecker.jks -p:AndroidSigningKeyAlias=usagechecker -p:AndroidSigningKeyPass=usagechecker -p:AndroidSigningStorePass=usagechecker
   displayName: Build UsageChecker
