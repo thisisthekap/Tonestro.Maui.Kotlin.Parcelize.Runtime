@@ -7,25 +7,22 @@
     </PropertyGroup>
     <PropertyGroup>
         <IsPackable>true</IsPackable>
-        <PackageId>Tonestro.Maui.Kotlin.Parcelize.Runtime</PackageId>
+        <PackageId>Tonestro.Maui.Kotlin.Android.Extensions.Runtime</PackageId>
         <Version>1.7.21.3</Version>
-        <Description>Contains bindings for kotlin.parcelize.runtime</Description>
-        <Authors>Christian Kapplmüller, Albilaga</Authors>
+        <Description>Contains bindings for kotlin.android.extensions.runtime</Description>
+        <Authors>Christian Kapplmüller</Authors>
         <Company>fun.music IT GmbH</Company>
         <PackageOutputPath>nugetoutput</PackageOutputPath>
         <PackageLicensePath>..\LICENSE</PackageLicensePath>
     </PropertyGroup>
     <ItemGroup>
-        <PackageReference Include="Xamarin.Kotlin.StdLib" Version="1.7.21"/>
+        <PackageReference Include="Xamarin.Kotlin.StdLib.Jdk7" Version="1.7.21"/>
     </ItemGroup>
     <ItemGroup>
-        <AndroidLibrary Include="Jars\kotlin-parcelize-runtime-1.7.21.jar">
+        <AndroidLibrary Include="Jars\kotlin-android-extensions-runtime-1.7.21.jar">
             <Bind>true</Bind>
             <Pack>true</Pack>
         </AndroidLibrary>
-        <JavaSourceJar Include="Jars\kotlin-parcelize-runtime-1.7.21-sources.jar"/>
-    </ItemGroup>
-    <ItemGroup>
-        <ProjectReference Include="..\Tonestro.Maui.Kotlin.Android.Extensions.Runtime\Tonestro.Maui.Kotlin.Android.Extensions.Runtime.csproj"/>
+        <JavaSourceJar Include="Jars\kotlin-android-extensions-runtime-1.7.21-sources.jar"/>
     </ItemGroup>
 </Project>

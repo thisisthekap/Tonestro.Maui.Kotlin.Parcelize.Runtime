@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tonestro.Maui.Kotlin.Parcelize.Runtime", "Tonestro.Maui.Kotlin.Parcelize.Runtime\Tonestro.Maui.Kotlin.Parcelize.Runtime.csproj", "{668975A8-0DB5-4B82-BC25-3BDF6CD4136D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tonestro.Maui.Kotlin.Parcelize.Runtime", "Tonestro.Maui.Kotlin.Parcelize.Runtime\Tonestro.Maui.Kotlin.Parcelize.Runtime.csproj", "{467995B1-2882-456D-954C-826901B0F987}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tonestro.Maui.Kotlin.Parcelize.Runtime.UsageChecker", "Tonestro.Maui.Kotlin.Parcelize.Runtime.UsageChecker\Tonestro.Maui.Kotlin.Parcelize.Runtime.UsageChecker.csproj", "{6096BADE-282E-4DDB-9179-BFF28FE3FF58}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tonestro.Maui.Kotlin.Android.Extensions.Runtime", "Tonestro.Maui.Kotlin.Android.Extensions.Runtime\Tonestro.Maui.Kotlin.Android.Extensions.Runtime.csproj", "{4F7A7C02-E699-484B-A51F-6492E5445BA2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tonestro.Maui.Kotlin.Parcelize.Runtime.UsageChecker", "Tonestro.Maui.Kotlin.Parcelize.Runtime.UsageChecker\Tonestro.Maui.Kotlin.Parcelize.Runtime.UsageChecker.csproj", "{68C14C4E-1DB7-4833-9BBF-2545B4FD2027}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -16,13 +18,17 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{668975A8-0DB5-4B82-BC25-3BDF6CD4136D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{668975A8-0DB5-4B82-BC25-3BDF6CD4136D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{668975A8-0DB5-4B82-BC25-3BDF6CD4136D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{668975A8-0DB5-4B82-BC25-3BDF6CD4136D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6096BADE-282E-4DDB-9179-BFF28FE3FF58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6096BADE-282E-4DDB-9179-BFF28FE3FF58}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6096BADE-282E-4DDB-9179-BFF28FE3FF58}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6096BADE-282E-4DDB-9179-BFF28FE3FF58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{467995B1-2882-456D-954C-826901B0F987}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{467995B1-2882-456D-954C-826901B0F987}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{467995B1-2882-456D-954C-826901B0F987}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{467995B1-2882-456D-954C-826901B0F987}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F7A7C02-E699-484B-A51F-6492E5445BA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F7A7C02-E699-484B-A51F-6492E5445BA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F7A7C02-E699-484B-A51F-6492E5445BA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F7A7C02-E699-484B-A51F-6492E5445BA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68C14C4E-1DB7-4833-9BBF-2545B4FD2027}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68C14C4E-1DB7-4833-9BBF-2545B4FD2027}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68C14C4E-1DB7-4833-9BBF-2545B4FD2027}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68C14C4E-1DB7-4833-9BBF-2545B4FD2027}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

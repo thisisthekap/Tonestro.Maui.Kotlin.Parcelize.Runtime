@@ -7,6 +7,9 @@ public class MainActivity : Activity
     {
         base.OnCreate(savedInstanceState);
 
+        Console.WriteLine($"ASDF: {typeof(Kotlinx.Parcelize.IIgnoredOnParcel).FullName}");
+        Console.WriteLine($"ASDF: {typeof(Kotlinx.Android.Extensions.ILayoutContainer).FullName}");
+        
         // Set our view from the "main" layout resource
         SetContentView(Resource.Layout.activity_main);
     }

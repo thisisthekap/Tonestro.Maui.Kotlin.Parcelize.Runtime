@@ -13,8 +13,18 @@ variables:
 
 steps:
 
+- task: UseDotNet@2
+  inputs:
+    packageType: 'sdk'
+    useGlobalJson: true
+
 - bash: |
     echo "##vso[task.setvariable variable=bindingsVersion]$(cat Tonestro.Maui.Kotlin.Parcelize.Runtime/Tonestro.Maui.Kotlin.Parcelize.Runtime.csproj | grep '<Version>' | awk -F '[<>]' '{print $3}')"
+  displayName: Set Build Number
+
+- bash: |
+    sudo dotnet workload restore
+  displayName: Restore workloads
 
 - bash: |
     echo "##vso[build.updatebuildnumber]production-maui-kotlin-parcelize-runtime-bindings-$(Build.SourceBranchName)-$(Build.BuildId)"
@@ -26,8 +36,18 @@ steps:
     fi
 
 - bash: |
-    cd Tonestro.Maui.Kotlin.Parcelize.Runtime
     sudo dotnet workload restore
+  displayName: Restore workloads
+
+- bash: |
+    cd Tonestro.Maui.Kotlin.Android.Extensions.Runtime
+    dotnet restore
+    dotnet build --configuration Release
+    dotnet pack --configuration Release
+  displayName: "Tonestro.Maui.Kotlin.Android.Extensions.Runtime: Build Release Nuget"
+
+- bash: |
+    cd Tonestro.Maui.Kotlin.Parcelize.Runtime
     dotnet restore
     dotnet build --configuration Release
     dotnet pack --configuration Release
@@ -38,6 +58,7 @@ steps:
   displayName: "Copy nugets to nugetoutput folder"
 
 - bash: |
+    dotnet nuget push nugetoutput/Tonestro.Maui.Kotlin.Android.Extensions.Runtime.$(bindingsVersion).nupkg -k "$(nugetOrgApiKey)" -s https://api.nuget.org/v3/index.json
     dotnet nuget push nugetoutput/Tonestro.Maui.Kotlin.Parcelize.Runtime.$(bindingsVersion).nupkg -k "$(nugetOrgApiKey)" -s https://api.nuget.org/v3/index.json
   displayName: "Publish nuget packages to nuget.org"
 
