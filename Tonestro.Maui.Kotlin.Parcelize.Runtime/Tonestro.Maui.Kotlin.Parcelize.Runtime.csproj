@@ -8,7 +8,7 @@
     <PropertyGroup>
         <IsPackable>true</IsPackable>
         <PackageId>Tonestro.Maui.Kotlin.Parcelize.Runtime</PackageId>
-        <Version>1.7.21.3</Version>
+        <Version>1.7.21.4</Version>
         <Description>Contains bindings for kotlin.parcelize.runtime</Description>
         <Authors>Christian Kapplmüller, Albilaga</Authors>
         <Company>fun.music IT GmbH</Company>

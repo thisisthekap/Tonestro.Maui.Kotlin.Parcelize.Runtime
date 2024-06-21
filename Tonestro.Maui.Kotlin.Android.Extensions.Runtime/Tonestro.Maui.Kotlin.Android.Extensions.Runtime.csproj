@@ -8,7 +8,7 @@
     <PropertyGroup>
         <IsPackable>true</IsPackable>
         <PackageId>Tonestro.Maui.Kotlin.Android.Extensions.Runtime</PackageId>
-        <Version>1.7.21.3</Version>
+        <Version>1.7.21.4</Version>
         <Description>Contains bindings for kotlin.android.extensions.runtime</Description>
         <Authors>Christian Kapplmüller</Authors>
         <Company>fun.music IT GmbH</Company>
